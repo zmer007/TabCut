@@ -235,7 +235,7 @@ public class SolutionProvider {
 
         Block child = new Block(target, true);
         Block childA = new Block(src.getWidth() - child.getWidth(), src.getHeight());
-        Block childB = new Block(src.getWidth(), src.getHeight() - child.getHeight());
+        Block childB = new Block(child.getWidth(), src.getHeight() - child.getHeight());
 
         src.setChild(child);
         Block.setChildAB(src, childA, childB);
